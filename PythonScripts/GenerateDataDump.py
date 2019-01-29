@@ -23,6 +23,6 @@ df = pd.read_sql_query("""
 					conn)
 
 print(df.head())
-export = df.to_csv(process_path, index=None, header=True)
+export = df.to_csv(process_path, index=None, header=True, encoding='cp1252')
 conn.close()
 
