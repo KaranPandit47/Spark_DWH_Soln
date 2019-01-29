@@ -1,11 +1,11 @@
-import Setup as S
+import Setup as I
 import RawDataExtract as R
 import LoadStageTables as S
 import LoadDimFactTables as F
 import datetime
 
 def load_properties_data():
-	S.check_dependency()
+	I.check_dependency()
 	currentDT = datetime.datetime.now()
 	print ("Job Started :"+currentDT.strftime("%Y-%m-%d %H:%M:%S"))
 	R.load_raw_data()
