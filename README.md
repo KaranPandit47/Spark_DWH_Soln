@@ -12,11 +12,11 @@
 
 ### Instructions to Run Job
 1. Clone the Github Repo on local machine
-2. Place .json source file under 'Data/raw' folder
-3. Open command prompt. Navigate to PythonScripts folder under the github repo folder
-4. Execute 'LoadMaster.py' file (python LoadMaster.py)
+2. Place .json source file under **'Data/raw'** folder _(File not present in repo)_
+3. Open command prompt. Navigate to PythonScripts folder
+4. Execute 'LoadMaster.py' file _(python LoadMaster.py)_
    * SQLlite Database file is created under 'Data/db' folder
-5. Execute 'GenerateDataDump.py' file (python GenerateDataDump.py) to generate a flat dump of the fact table under 'Data/processed' folder
+5. Execute 'GenerateDataDump.py' file _(python GenerateDataDump.py)_ to generate a flat dump of the fact table under 'Data/processed' folder
 
 ### File & Folder Descriptions
 1. DDLScripts - Stores DDL scripts for Raw, Staging, Dimension and Fact Tables
