@@ -22,7 +22,6 @@ df = pd.read_sql_query("""
 					INNER JOIN DIM_FLAT_TYPE D ON D.FLAT_TYPE_ID = F.FLAT_TYPE_ID;""", 
 					conn)
 
-print(df.head())
 export = df.to_csv(process_path, index=None, header=True, encoding='cp1252')
 conn.close()
 
