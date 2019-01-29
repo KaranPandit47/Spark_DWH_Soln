@@ -18,5 +18,18 @@
    * SQLlite Database file is created under 'Data/db' folder
 5. Execute 'GenerateDataDump.py' file (python GenerateDataDump.py) to generate a flat dump of the fact table under 'Data/processed' folder
 
+### File & Folder Descriptions
+1. DDLScripts - Stores DDL scripts for Raw, Staging, Dimension and Fact Tables
+2. DMLScripts - Stores Insert Scripts for all tables
+3. Data/raw - Place source .json file here (job is configured to only process 1 file at a time)
+4. Data/processed - Stores Flat .csv dump of fact table
+5. Data/db - Stored SQLite .db file
+6. PythonScripts/Setup.py - Check to see if pandas library is installed on local machine
+7. PythonScripts/RawDataExtract.py - Load raw data into RAW_PROPERTY_DATA Table
+8. PythonScripts/LoadStageTables.py - Load staging tables from RAW table
+9. PythonScripts/LoadDimFactTables.py - Load dimension and fact tables
+10. PythonScripts/LoadMaster.py - Master file to orchestrate execution of all python scripts
+11. PythonScripts/GenerateDataDump.py - Generate CSV dump of Fact table
 
+### Data Model Diagram
 ![alt text](https://github.com/KaranPandit47/Spark_DWH_Soln/blob/master/DWH_Model.png)
